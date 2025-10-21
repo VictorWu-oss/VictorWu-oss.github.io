@@ -1,24 +1,97 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Victor Wu's Personal Website</title>
+  <head lang="en">
+    <title>Resume - Victor Wu</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <nav class="navbar"></nav>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">Victor Wu</a>
+      </div>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
     <main>
-      <div class="resume"></div>
-      <section class="section"></section>
-      <h2>Education</h2>
-      <h2>Experience</h2>
-      <h2>Skills</h2>
-      <h2>Projects</h2>
-      <h2>Projects</h2>
-      <h2>Projects</h2>
-      <h2>Projects</h2>
-      <h2>Projects</h2>
-      <h2>Projects</h2>
+      <h1 class="page-title">Resume</h1>
+
+      <div style="text-align: center; margin-bottom: 30px">
+        <button class="button" onclick="window.print()">Download PDF</button>
+      </div>
+
+      <div class="resume">
+        <section class="section">
+          <h2>Education</h2>
+          <div class="entry">
+            <h3>California Polytechnic State University, San Luis Obispo</h3>
+            <p>
+              <em>Degree in Software Engineering, Graduation Year: 2028</em>
+            </p>
+            <p>Relevant coursework, honors, or achievements</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Experience</h2>
+          <div class="entry">
+            <h3>Job Title - Company Name</h3>
+            <p><em>Start Date - End Date</em></p>
+            <ul>
+              <li>Lorem Ipsem</li>
+              <li>Lorem Ipsem</li>
+              <li>Lorem Ipsem</li>
+            </ul>
+          </div>
+
+          <div class="entry">
+            <h3>Job Title - Company Name</h3>
+            <p><em>Start Date - End Date</em></p>
+            <ul>
+              <li>Lorem Ipsem</li>
+              <li>Lorem Ipsem</li>
+              <li>Lorem Ipsem</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Skills</h2>
+          <div class="entry">
+            <p>
+              <strong>Programming Languages:</strong> Python, JavaScript, Java,
+              C/C++, C#, RISC-V Assembly.
+            </p>
+            <p><strong>Technologies:</strong> React, Node.js, Git</p>
+            <p>
+              <strong>Tools:</strong> VS Code, GitHub, Pycharm, IntelliJ IDEA
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Projects</h2>
+          <div class="entry">
+            <h3>Project Name</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              dictum maximus nulla id feugiat. Donec laoreet posuere nibh, vel
+              rutrum mi ultrices sit amet. Quisque lobortis consequat vulputate.</p>
+          </div>
+          <div class="entry">
+            <h3>Another Project</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              dictum maximus nulla id feugiat. Donec laoreet posuere nibh, vel
+              rutrum mi ultrices sit amet. Quisque lobortis consequat vulputate.</p>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="footer">

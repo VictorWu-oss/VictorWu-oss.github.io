@@ -1,0 +1,394 @@
+:root {
+  /* variables */
+  --cg-black: rgb(30, 32, 32);
+  --cg-blue: rgb(36, 94, 255);
+  --cg-grey: rgb(243, 243, 243);
+  --cg-white: rgb(255, 255, 255);
+}
+
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--cg-grey);
+  position: relative;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* CSS for navigation */
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 7%;
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  background-color: var(--cg-black);
+  color: var(--cg-white);
+  padding: 15px 20px;
+  box-sizing: border-box;
+
+  /* Debug border */
+  /* border: solid red; */
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  /* Debug border */
+  /* border: solid blue; */
+}
+
+.navbar a {
+  color: var(--cg-white);
+  font-weight: bold;
+  margin: 0 12px;
+  text-decoration: none;
+  letter-spacing: 2px;
+
+  font-family: monospace;
+}
+
+.navbar a:hover {
+  color: var(--cg-blue);
+  text-decoration: underline;
+}
+
+.navbar a:active {
+  color: var(--cg-blue);
+}
+
+.logo a {
+  font-family: Georgia;
+  font-size: 24px;
+}
+
+.logo a:hover {
+  text-decoration: None;
+}
+
+main {
+  padding: 0 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.page-title {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-family: Georgia;
+}
+
+/* CSS for portfolio grid */
+
+.project {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  width: 100%;
+  margin: 1em 0 2em 0;
+  box-sizing: border-box;
+
+  /* Debug border */
+  /* border: 2px solid blue; */
+}
+
+.item-link {
+  width: 70%;
+
+  /* Debug border */
+  /* border: 2px solid red; */
+}
+
+.project-image {
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+  flex-basis: 50px;
+  flex-grow: 2;
+
+  /* Debug border */
+  /* border: 2px solid black; */
+}
+
+.project-details {
+  display: flex;
+  background-color: var(--cg-white);
+  width: 30%;
+  height: 500px;
+  flex-shrink: 1;
+  padding: 0 20px;
+  margin: 0px;
+  line-height: 1.5;
+  overflow: scroll;
+
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  /* Debug border */
+  /* border: 2px solid green; */
+}
+
+.project-details a {
+  color: var(--cg-black);
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.project-details a:hover {
+  color: var(--cg-blue);
+  text-decoration: underline;
+}
+
+.project-details {
+  font-weight: lighter;
+}
+
+.project-name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* CSS for home page */
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 100%;
+  box-sizing: border-box;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.about-image img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+}
+
+.about-text {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.about-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* CSS for resume page */
+
+.button {
+  background-color: var(--cg-black);
+  border: none;
+  color: var(--cg-white);
+
+  font-family: monospace;
+
+  padding: 5px 7px;
+  text-align: center;
+
+  border-radius: 2px;
+}
+
+.button:hover {
+  background-color: var(--cg-blue);
+}
+
+.resume h2 {
+  font-family: Georgia;
+}
+
+/* CSS for contact form */
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: Georgia;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+/* Add some spacing to the form */
+form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* CSS for footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cg-black);
+  color: var(--cg-white);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+/* CSS for blog page */
+
+.blog-post {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: var(--cg-white);
+  border-radius: 5px;
+}
+
+.blog-image {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.blog-post h2 {
+  font-family: Georgia;
+  color: var(--cg-black);
+  margin-bottom: 10px;
+}
+
+.blog-meta {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  color: var(--cg-blue);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* CSS for research and resume sections */
+
+.section {
+  margin-bottom: 30px;
+}
+
+.entry {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: var(--cg-white);
+  border-radius: 5px;
+}
+
+.entry h3 {
+  font-family: Georgia;
+  margin-top: 0;
+  color: var(--cg-black);
+}
+
+.entry ul {
+  margin: 10px 0;
+  padding-left: 25px;
+}
+
+.entry li {
+  margin-bottom: 8px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 30px 0;
+}
+
+/* CSS for individual blog pages */
+.blog-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--cg-blue);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.blog-content {
+  line-height: 1.8;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.blog-content h2 {
+  font-family: Georgia;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: var(--cg-black);
+}
+
+.blog-content p {
+  margin-bottom: 20px;
+}
